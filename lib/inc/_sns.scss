@@ -1,0 +1,139 @@
+@import "lib/inc/_color.scss";
+
+// sns ----------
+
+$twitter-color: #00aced;
+$facebook-color: #305097 ;
+$google-color: #db4a39;
+$hatena-color: #7db4e8;
+
+body.page,
+body.single{
+.bzb-sns-btn{
+  height: 30px;
+  .s_buttons{
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    .fa{
+      font-size: 14px;
+    }
+    .sharrre{
+      margin: 0 5px 0 0;
+      float: left;
+      overflow: hidden;
+      &.twitter{
+        a{
+          background: $twitter-color;
+        }
+        a:hover{
+          background: lighten($twitter-color, 10%);
+        }
+      }
+      &.facebook{
+        a{
+          background: $facebook-color;
+        }
+        a:hover{
+          background: lighten($facebook-color,10%);
+        }
+      }
+      &.googlePlus{
+        a{
+          background: $google-color;
+        }
+        a:hover{
+          background: lighten($google-color,10%);
+        }
+      }
+      &.hatena{
+        a{
+          background: $hatena-color;
+        }
+        a:hover{
+          background: lighten($hatena-color,10%);
+        }
+      }
+    }
+    a{
+      background: $gray-light;
+      display: inline-block;
+      color: #fff;
+      overflow: hidden;
+      font-size: 12px;
+      padding: 2px 5px;
+      &:hover{
+        text-decoration: none;
+      }
+      .count,
+      .share{
+        line-height: 1.1;
+        padding: 1px 5px;
+      }
+      .count{
+        float: right;
+        border-radius: 0px 1px 1px 0px;
+        text-align: center;
+        line-height: 20px;
+      }
+      .share{
+        font-family:'FontAwesome' "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        line-height: 20px;
+      }
+      
+    }
+  }
+}
+}
+
+/* loop sns */
+
+
+.post-loop-wrap{
+
+
+.post-footer{
+  padding: 0 56px;
+}
+.bzb-sns-btn{
+  height: 30px;
+  padding: 0 56px;
+  .s_buttons{
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 0;
+    .fa{
+    }
+    .sharrre{
+      margin: 0;
+      float: left;
+      width: 16%;
+      overflow: hidden;
+      a{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background: transparent;
+        color: lighten($text-color,20%);
+        text-align: center;
+        &:hover{
+          color: $text-color;
+          text-decoration: none;
+        }
+      }
+      .fa{
+        font-size: 18px;
+        margin-right: 5px;
+      }
+      .share{
+        display: none;
+      }
+      .count{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+}

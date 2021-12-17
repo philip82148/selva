@@ -1,0 +1,611 @@
+/* ----------------------------------------
+* color
+---------------------------------------- */
+
+// common
+//----------------------------------------
+$c02-main-color:    #FB4343;
+$c02-key-color:     #f24e4f;
+$c02-base-color:    #f9f9f9;
+$c02-text-color:    #656364;
+
+$c02-border-color:        #E3E3E3;
+$c02-border-color-light:  $c02-border-color;
+
+$c02-gray:          #5e6265;
+$c02-gray-light:    #cccccc;
+
+// link ----------------------------------
+
+$c02-link-color: $c02-main_color;
+$c02-side-link-color: lighten($c02-text-color, 20%);
+
+// sns ----------
+
+$twitter-color:   #00aced;
+$facebook-color:  #305097;
+$google-color:    #db4a39;
+$hatena-color:    #7db4e8;
+$feedly-color:    #2bb24c;
+
+// header --------------------------------
+
+$c02-header-text-logo:  #4E4E4E;
+$c02-header-bg:         #fff;
+
+// sns
+$c02-header-sns-link:   #ccc; 
+$c02-header-sns-hover:  #595E62;
+
+
+// gnav ----------------------------------
+
+$c02-gnav-bg:           #fff;
+$c02-gnav-hover-bg:     #343434;
+$c02-gnav-link-color:   #2B2D2D;
+$c02-gnav-hover-color:  $c02-gnav-link-color;
+
+$c02-gnav-sub-bg:     #656364;
+$c02-gnav-sub-hover:  #171818;
+
+// content --------------------------------
+
+// main --------------------------------
+// post-cta --------------------------------
+
+$c02-post-cta-bg:     #f5f5f5;
+$c02-post-cta-color:  $c02-text-color;
+$c02-post-cta-btn-bg: #5ace5f;
+$c02-post-cta-btn-color: #fff;
+
+// single-lp --------------------------------
+
+$c02-lp-wrap-bg:  #fff;
+$c02-lp-head-bg:  $c02-lp-wrap-bg;
+
+// side --------------------------------
+
+$c02-side-link-color:   $c02-gray;
+$c02-side-hover-color:  $main-color;
+
+// footer --------------------------------
+
+$c02-footer-color:        #1E252C;
+$c02-footer-link-color:   #1E252C;
+$c02-footer-hover-color:  $c02-main-color;
+
+$c02-footer-01-bg:        #fff;
+$c02-footer-02-bg:        #fff;
+
+
+
+
+/* ----------------------------------------
+* color01
+---------------------------------------- */
+
+/* ----------------------------------------
+* フォント設定
+---------------------------------------- */
+
+
+$font-dg: 'Didact Gothic';
+
+
+/* ----------------------------------------
+* カラースキーム
+---------------------------------------- */
+
+//@import "lib/inc/_color.scss";
+
+
+/* ----------------------------------------
+* all
+---------------------------------------- */
+
+
+
+body.color02{
+
+
+  background: $c02-base-color;
+  color: $c02-text-color; 
+
+
+a{
+  color: $c02-link-color;
+}
+
+/* form
+---------------------------------------- */
+
+form{
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  textarea{
+    border: 1px #ccc solid;
+  }
+  input[type="submit"],
+  button{
+    background: $c02-main-color;
+    color: #fff;
+  }
+}
+
+
+/* ----------------------------------------
+* header
+---------------------------------------- */
+
+#header{
+  background: $c02-header-bg;
+  border-bottom: 1px solid $c02-border-color-light;
+  #logo{
+    font-family: $font-dg;
+    a{
+      color: $c02-text_color;
+    }
+  }
+  #header-sns{
+    a{
+      color: $header-sns-link;
+      &:hover{
+        color: $header-sns-hover;
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* breadcrumb
+---------------------------------------- */
+
+
+.breadcrumb{
+  li{
+    a{
+      color: $c02-text-color;
+      &:hover{
+        color: $c02-main-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* gloval nav
+---------------------------------------- */
+
+#gnav{
+  background: $c02-gnav-bg;
+  border-top: 1px $c02-border-color-light solid;
+  border-bottom: 1px $c02-border-color-light solid;
+  ul{
+    li{
+      &.current-menu-item{
+        a{
+          border-top: 1px $c02-main_color solid;
+        }
+      }
+      a{
+        border-top: 1px $c02-border-color-light solid;
+        color: $c02-gnav-link-color;
+        background: $c02-gnav-bg;
+        &:hover{
+          color: $c02-gnav-hover-color;
+          border-top: 1px $c02-main_color solid;
+        }
+      }
+      .sub-menu{
+        background: #fff;
+        li{
+          a{
+            color: #fff;
+            background: #2b2b2b;
+            border: none;
+            &:hover{
+              background: #373B3B;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* ----------------------------------------
+* content
+---------------------------------------- */
+
+#content{
+  /* キャプション */
+  .wp-caption{
+    border: 1px solid $c02-border-color-light;
+  }
+}
+
+
+/* ----------------------------------------
+* main
+---------------------------------------- */
+
+.cat-content,
+article.post,
+article.page{
+  background: #fff;
+  border: 1px $c02-border-color solid;
+}
+.post-title{
+  a{
+    color: $c02-text_color;
+    &:hover{
+      color: $c02-key-color;
+    }
+  }
+}
+
+.post-title{
+  a{
+    color: $c02-main_color;
+    &:hover{
+      color: $c02-key-color;
+    }
+  }
+}
+.cat-content,
+article.page{
+  .post-header{
+    background: #fff;
+  }
+}
+.post-meta{
+  border-top: 1px $c02-border-color-light solid;
+  li{
+    background: #fff;
+  }
+}
+
+.post-content{
+  hr{
+    border-bottom: 1px solid $c02-border-color-light;
+  }
+  pre{
+    padding: 20px;
+  }
+  h2{
+    border-bottom: 1px solid $c02-border-color-light;
+  }
+  h3{
+    border-left: 5px solid $c02-border-color;
+  }
+  blockquote{
+    border: 1px $c02-border-color solid;
+    &:before{
+      color: #e7e7e7;
+    }
+    cite{
+      color: #808080;
+    }
+  }
+  table{
+    border: 1px #ddd solid;
+    th,
+    td{
+      border: #ddd solid 1px;
+    }
+    th{
+      color: #fff;
+    }
+    thead{
+      th{
+        background: $c02-gray;
+      }
+    }
+    tbody{
+      th{
+        background: lighten($c02-gray, 20%); 
+      }
+    }
+    &.table-line{
+      table,
+      th,
+      td{
+        border-color: #fff;
+      }
+      th{
+        background: transparent;
+        color: $c02-text_color;
+        font-weight: bold;
+      }
+      thead{
+        th{
+          background: $c02-gray;
+          color: #fff;
+        }
+      }
+      tr{
+        background: #eee;
+      }
+      tr:nth-child(2n+1) {
+        background: #ddd;
+      }
+
+    }
+  }
+}
+
+.post-cta{
+  background: $c02-post-cta-bg;
+  color: $c02-post-cta-color;
+  border-top: 3px solid $c02-border-color;
+  border-bottom: 1px solid $c02-border-color;
+  .cta-post-title{
+    border-bottom: 1px solid $c02-border-color-light;
+  }
+  .post-cta-btn{
+    a{
+      background: $c02-post-cta-btn-bg;
+      color: $c02-post-cta-btn-color;
+      border-bottom: 5px solid darken( $c02-post-cta-btn-bg ,10% );
+      &:hover{
+        background: lighten($c02-post-cta-btn-bg,10%);
+        border-bottom: 5px solid $c02-post-cta-btn-bg;
+      }
+    }
+  }
+  .btn{
+    color: #fff;
+    background: $c02-main-color;
+    &:hover{
+      background: $c02-key-color;
+    }
+  }
+}
+
+.post-share{
+  .post-share-list1,
+  .post-share-list2,
+  .post-share-list3,
+  .post-share-list4{
+    a{
+      &:hover{
+        background: #f7f7f7;
+      }
+    }
+  }
+  .post-share-facebook{
+    a:hover{
+      color: $facebook-color;
+    }
+  }
+  .post-share-twitter{
+    a:hover{
+      color: $twitter-color;
+    }
+  }
+  .post-share-google{
+    a:hover{
+      color: $google-color;
+    }
+  }
+  .post-share-feedly{
+    a:hover{
+      color: $feedly-color;
+    }
+  }
+}
+.post-author{
+  border-top: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+  color: $c02-text-color;
+  a{
+    color: $c02-main-color;
+  }
+  .post-author-meta{
+    color: $c02-text-color;
+    background: #f7f7f7;
+  }
+}
+
+/* comment
+---------------------------------------- */
+
+.comment-list > .comment{
+  border-bottom: 1px #eee solid;
+}
+.comment-list{
+  .children{
+    .comment-body{
+      background: #f7f7f7;
+    }
+  }
+}
+
+/* loop
+---------------------------------------- */
+
+.cat-content{
+  background: #fff;
+}
+
+.post-loop-wrap{
+  .more-link{
+    border: 1px $c02-main-color solid;
+    color: $c02-main_color;
+    &:hover{
+      background: $c02-main_color;
+      color: #fff;
+    }
+  }
+  .post-footer{
+    border-top: 1px $c02-border-color-light solid;
+  }
+
+}
+
+.pagination span, .pagination a {
+  color: $c02-text_color;
+  background: #fff;
+}
+ 
+.pagination a:hover{
+  color:#fff;
+  background: #3279BB;
+}
+ 
+.pagination .current{
+  background: #3279BB;
+  color:#fff;
+}
+
+/* ----------------------------------------
+* side
+---------------------------------------- */
+
+.side-widget{
+  a{
+    color: $c02-side-link-color;
+    &:hover{
+      color: $c02-side-hover-color;
+    }
+  }
+  ul{
+    li{
+      border-bottom: 1px solid $c02-border-color;
+    } 
+  }
+  a{
+    color: $c02-side-link-color;
+    &:hover{
+      color: $c02-main-color;
+    }
+  }
+}
+
+/* search */
+
+/* search */
+.widget_search{
+    background: #fff;
+    border: 1px solid $c02-border-color;
+  form{
+    input[type=text]{
+      border: none;
+    }
+    button{
+      color: $gray;
+      background: #fff;
+    }    
+  }
+}
+
+/* comment */
+
+.recentcomments{
+  color: #808080;
+  a{
+    color: $c02-text-color;
+  }
+}
+
+/* 実装中止----------- */
+
+/* follow */
+#side .share-list-wrap{
+  background: $c02-base-color;
+  .post-share-list1,
+  .post-share-list2,
+  .post-share-list3,
+  .post-share-list4{
+    li{
+      a{
+        background: #fff;
+        color: $c02-gray;
+      }
+      &.post-share-facebook{
+        a:hover{
+          color: $facebook-color;
+        }
+      }
+      &.post-share-twitter{
+        a:hover{
+          color: $twitter-color;
+        }
+      }
+      &.post-share-google{
+        a:hover{
+          color: $google-color;
+        }
+      }
+      &.post-share-feedly{
+        a:hover{
+          color: $feedly-color;
+        }
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* footer
+---------------------------------------- */
+
+#footer{
+  color: $c02-footer-color;
+  a{
+    color: $c02-footer-link-color;
+    &:hover{
+      color: $c02-footer-hover-color;
+    }
+  }
+}
+.footer-01{
+  background: $c02-footer-01-bg;
+  border-top: 1px $c02-border-color-light solid;
+}
+.footer-02{
+  background: $c02-footer-02-bg;
+  border-top: 1px $c02-border-color-light solid;
+}
+
+
+/* ----------------------------------------
+* LP
+---------------------------------------- */
+
+.single-lp{
+  .lp-wrap{
+    border: 1px solid $c02-border-color-light;
+    background: $c02-lp-wrap-bg;
+  }
+  #lp-header{
+    background: $c02-lp-head-bg;
+    h1{
+      color: $c02-main-color;
+      border-bottom: 1px solid $c02-border-color-light;
+    }
+  }
+  .lp-form{
+    background: #494c4e;
+    color: #fff;
+    input[type=submit],
+    button{
+      background: $c02-post-cta-btn-bg;
+      color: $c02-post-cta-btn-color;
+      border-bottom: 5px solid darken( $c02-post-cta-btn-bg, 10% );
+      &:hover{
+        background: lighten($c02-post-cta-btn-bg, 5%);
+      }
+    }
+  }
+}
+
+} // body end

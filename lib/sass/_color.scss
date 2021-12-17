@@ -1,0 +1,2844 @@
+/* ----------------------------------------
+* カラースキーム 01
+---------------------------------------- */
+// color ========================================
+
+// common
+//----------------------------------------
+
+$c01-base-color:      #fff;
+$c01-base-color-2:    #fafafa;
+$c01-main-color:      #2B353E;
+$c01-main-color-2:    #1E252B;
+$c01-main-color-3:    #06ABC8;
+$c01-accent-color:    #FFC600;
+
+$c01-text-color:      #2B353E;
+
+$c01-border-color:        #e5e5e5;
+$c01-border-color-light:  #eee;
+
+$c01-gray:          #5e6265;
+$c01-gray-light:    #cccccc;
+
+$c01-dark:          #131D2A;
+
+// link ----------------------------------
+
+$c01-link-color: $c01-main-color;
+$c01-side-link-color: $c01-main-color;
+
+// header --------------------------------
+
+$c01-header-text-logo:  $c01-base-color;
+$c01-header-bg:         $c01-main-color-3;
+
+// gnav ----------------------------------
+
+$c01-gnav-bg:           $c01-main-color-3;
+$c01-gnav-hover-bg:     lighten( $c01-gnav-bg, 5% );
+$c01-gnav-link-color:      #fff;
+$c01-gnav-hover-color:  $c01-gnav-link-color;
+
+// frontpage --------------------------------
+
+$c01-mainv-bg-1:    #1DBBDA;
+$c01-mainv-bg-2:    #06ABC8;
+$c01-mainv-color:  #fff;
+
+// content --------------------------------
+
+// main --------------------------------
+// post-cta --------------------------------
+
+$c01-post-cta-bg:     $c01-dark;
+$c01-post-cta-color:  $c01-base-color;
+$c01-post-cta-btn-bg: #F86222;
+$c01-post-cta-btn-color: #fff;
+
+$c01-post-meta-bg:      #1F3145;
+$c01-post-meta-bg-2:    #1C2B3D;
+$c01-post-meta-color:   #fff;
+
+// single-lp --------------------------------
+
+$c01-lp-wrap-bg:  #fff;
+$c01-lp-head-bg:  $c01-main-color-3;
+
+// side --------------------------------
+
+$c01-side-link-color:   $c01-main-color-3;
+$c01-side-hover-color:  $c01-main-color-3;
+
+$c01-side-title-bg:     #ebebeb;
+$c01-side-title-border: #e4e4e4;
+
+// footer --------------------------------
+
+$c01-footer-border-top:   $c01-main-color;
+
+$c01-footer-color:        #fff;
+$c01-footer-link-color:   #fff;
+$c01-footer-hover-color:  #ccc;
+
+$c01-footer-01-bg:        #031731;
+$c01-footer-02-bg:        #010A17;
+
+// sp --------------------------------
+
+$c01-gnav-sp-bg:          $c01-main-color;
+
+
+
+/* ----------------------------------------
+* frontpage
+---------------------------------------- */
+
+body.home.color01{
+  #main_visual{
+    background: $c01-mainv-bg-1;
+    background-image: linear-gradient(to top left, $c01-mainv-bg-1, $c01-mainv-bg-2);
+    color: $c01-mainv-color;
+  }
+  
+  // 人気の記事・最新記事
+  .front-loop{
+    border-top: 1px solid $c01-border-color;
+    border-bottom: 1px solid $c01-border-color;
+    background: $c01-base-color;
+    h2{
+      border-bottom: 1px solid $c01-border-color;
+    }
+    .popular_post_box{
+      h3{
+        color: $c01-text-color;
+        a{
+          color: $c01-text-color;
+          &:hover{
+            color: $c01-accent-color;
+          }
+        }
+      }
+      ul{
+        a{
+          color: $c01-text-color;
+          &:hover{
+            color: $c01-accent-color;
+          }
+        }
+      }
+      .p_category{
+        background: $c01-main-color-3;
+        color: $c01-base-color;
+        color: $c01-base-color;
+      }
+      .p_rank{
+        background: #900;
+        color: $c01-base-color;
+      }
+      .p_date{
+        background: $c01-main-color;
+        color: $c01-base-color;
+      }
+    }
+  }
+  
+  // コンテンツ紹介・サービス紹介
+  .front-main-cont{
+    .front-cont-header{
+      background: $c01-main-color;
+      color: $c01-base-color;
+    }
+    .tri-border{
+      span{
+        border-left: 28px solid transparent;
+        border-left: 56px solid transparent;
+        border-right: 56px solid transparent;
+        border-top: 18px solid $c01-main-color;
+      }
+    } 
+  }
+  // コンテンツ紹介
+  #front-contents{
+    .c_box{
+      border-bottom: 1px solid $c01-border-color;
+    }
+    .c_box.c_box_left{
+      background-color: $c01-base-color;
+    }
+    .c_box.c_box_right{
+      background-color: $c01-base-color-2;
+    }
+    .c_number{
+      background: $c01-main-color-3;
+      color: $c01-base-color;
+    }
+    h3{
+      color: $c01-main-color-3;
+    }
+    .c_english{
+      color: $c01-main-color-3;
+    }
+    .c_text{
+      .c_btn{
+        a{
+          background: $c01-accent-color;
+          color: $c01-base-color;
+          text-shadow: 0 0 3px rgba(0,0,0,0.5);
+        }
+      }
+    }
+  }
+  // サービス
+  #front-service{
+    background: $c01-base-color;
+    border-bottom: 1px solid $c01-border-color;
+    .front-service-inner{
+      h3{
+        color: $c01-main-color-3;
+      }
+      .c_english{
+        color: $c01-main-color-3;
+      }
+      .c_text{
+        .c_btn{
+          a{
+            background: $c01-main-color-3;
+            color: $c01-base-color;
+            text-shadow: 0 0 3px rgba(0,0,0,0.5);
+          }
+        }
+      }
+    }
+  }
+  // 会社概要
+  #front-company{
+    background: $c01-base-color;
+    .c_box{
+      border-bottom: 1px solid $c01-border-color;
+    }
+    dl{
+      border-bottom: 1px solid $c01-border-color;
+    }
+    dl#front-company-1{
+      dt{
+        border-top: 2px solid $c01-main-color-3;
+      }
+      dd{
+        border-top: 1px solid $c01-border-color;
+      }
+    }
+  }
+  // お問い合わせ
+  #front-contact{
+    background: $c01-main-color-3;
+    .c_box_inner{
+      input[type=submit],
+      button{
+        background: $c01-dark;
+      }
+    }
+  }
+}
+
+body.color01{
+  
+  
+  color: $c01-text-color; 
+
+
+
+
+/* ----------------------------------------
+* all
+---------------------------------------- */
+
+
+a{
+  color: $c01-link-color;
+}
+
+
+/* form
+---------------------------------------- */
+
+form{
+  input[type="submit"],
+  button{
+    background: $c01-main-color;
+    color: #fff;
+  }
+}
+
+/* ----------------------------------------
+* header
+---------------------------------------- */
+
+#header{
+  background: $c01-header-bg;
+  a{
+    color: $c01-header-text-logo;
+  }
+}
+
+
+/* ----------------------------------------
+* breadcrumb
+---------------------------------------- */
+
+
+.breadcrumb-area{
+  background: #fff;
+  border-bottom: 1px solid $c01-border-color;
+}
+
+
+/* ----------------------------------------
+* gloval nav & primary nav
+---------------------------------------- */
+
+#gnav{
+  background: $c01-gnav-bg;
+  ul{
+    li{
+      &:hover{
+        a{
+          background: $c01-gnav-hover-bg;
+        }
+      }
+      &.current-menu-item{
+        a{
+          background: $c01-gnav-hover-bg;
+        }
+      }
+      a{
+        color: $c01-gnav-link-color;
+        background: $c01-gnav-bg;
+        &:hover{
+          color: $c01-gnav-hover-color;
+          background: $c01-gnav-hover-bg;
+        }
+      }
+      .sub-menu{
+        background: #fff;
+        border: 1px $c01-border-color solid;
+        li{
+          border-bottom: 1px $c01-border-color solid;
+          a{
+            color: $c01-main_color;
+            background: #fff;
+            &:hover{
+              background: #fafafa;
+              color: $c01-main_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#header-fnav-area{
+  #header-fnav-btn{
+    a{
+      background: $c01-gnav-hover-bg;
+    }
+  }
+  #header-fnav{
+    background: #fff;
+    border: 1px $c01-border-color solid;
+    li{
+      border-bottom: 1px $c01-border-color solid;
+      a{
+        color: $c01-main_color;
+        background: #fff;
+        &:hover{
+          background: #fafafa;
+          color: $c01-main_color;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* ----------------------------------------
+* main
+---------------------------------------- */
+
+.cat-content,
+article.post,
+article.page{
+  background: #fff;
+  border: 1px $c01-border-color solid;
+}
+.post-header{
+  padding: 56px 64px 46px;
+  border-bottom: 1px solid $c01-border-color;  
+  .cat-name{
+    span{
+      border: 1px solid $c01-main-color-3;
+      color: $c01-main-color-3;
+    }
+  }
+}
+.post-title{
+  a{
+    color: $c01-text-color;
+    &:hover{
+      color: $c01-accent-color;
+    }
+  }
+}
+.post-title{
+  a{
+    color: $c01-main-color;
+    &:hover{
+      color: $c01-accent-color;
+    }
+  }
+}
+.post-meta-area{
+  border-bottom: 1px solid $c01-border-color;
+  .post-meta-comment{
+    li{
+      border-left: 1px solid $c01-border-color;
+    }
+  }
+
+}
+.post-content{
+  hr{
+    border-bottom: 1px solid $c01-border-color-light;
+  }
+  h2{
+    border-left: 10px solid $c01-dark;
+    background: $c01-main-color;
+    color: $c01-base-color;
+  }
+  h3{
+    border-bottom: 2px solid $c01-main-color;
+  }
+  h4{
+    border-left: 5px solid $c01-dark;
+    clear: both;
+  }
+  blockquote{
+    border: 1px $c01-border-color solid;
+    background: $c01-base-color-2;
+    &:before{
+      color: #e7e7e7;
+    }
+    cite{
+      color: #808080;
+    }
+  }
+  table{
+    border: 1px #ddd solid;
+    th,
+    td{
+      border: #ddd solid 1px;
+    }
+    th{
+      color: #fff;
+    }
+    thead{
+      th{
+        background: $c01-gray;
+      }
+    }
+    tbody{
+      th{
+        background: lighten($c01-gray, 20%); 
+      }
+    }
+    &.table-line{
+      table,
+      th,
+      td{
+        border-color: #fff;
+      }
+      th{
+        color: $c01-text_color;
+      }
+      thead{
+        th{
+          background: $c01-gray;
+          color: #fff;
+        }
+      }
+      tr{
+        background: #eee;
+      }
+      tr:nth-child(2n+1) {
+        background: #ddd;
+      }
+    }
+  }
+}
+
+.post-cta{
+  background: $c01-post-cta-bg;
+  color: $c01-post-cta-color;
+  .cta-post-title{
+    border-bottom: 1px solid $c01-border-color-light;
+  }
+  .post-cta-btn{
+    a{
+      background: $c01-post-cta-btn-bg;
+      color: $c01-post-cta-btn-color;
+      &:hover{
+        background: lighten($c01-post-cta-btn-bg,10%);
+      }
+    }
+  }
+  .btn{
+    background: $c01-main-color;
+    &:hover{
+      background: $c01-accent-color;
+    }
+  }
+}
+
+.post-share{
+  .post-share-list1,
+  .post-share-list2,
+  .post-share-list3,
+  .post-share-list4{
+    a{
+      border: 1px #eee solid;
+      &:hover{
+        background: #f7f7f7;
+      }
+    }
+  }
+}
+.post-author{
+  border: 1px solid $c01-border-color;
+  color: $c01-text-color;
+  background: $c01-base-color;
+  a{
+    color: $c01-main-color;
+  }
+  .post-author-meta{
+    color: $c01-text-color;
+  }
+}
+
+/* comment
+---------------------------------------- */
+
+#comments{
+  border: 1px solid $c01-border-color;
+  background: #fff;
+  h4{
+    border-bottom: 5px solid $c01-main-color;
+    i{
+      color: $c01-main-color;
+    }
+  }
+}
+.comment-list > .comment{
+  border-bottom: 1px #eee solid;
+}
+.comment-list{
+  .children{
+    .comment-body{
+      background: #f7f7f7;
+    }
+  }
+}
+
+
+/* loop
+---------------------------------------- */
+
+.cat-content{
+  background: #fff;
+}
+
+.post-loop-wrap{
+  .more-link{
+    border: 1px $c01-main-color solid;
+    color: $c01-main_color;
+    &:hover{
+      background: $c01-main_color;
+      color: #fff;
+    }
+  }
+  .post-footer{
+    border-top: 1px $c01-border-color-light solid;
+    a.morelink{
+      background: $c01-main-color;
+      color: #fff;
+    }
+  }
+
+}
+
+/* pager */
+
+.pagination span, .pagination a {
+  color: $c01-text_color;
+  background: #fff;
+}
+ 
+.pagination a:hover{
+  color:#fff;
+  background: #3279BB;
+}
+ 
+.pagination .current{
+  background: #3279BB;
+  color:#fff;
+}
+
+/* ----------------------------------------
+* side
+---------------------------------------- */
+
+.side-widget{
+  .side-title{
+    background: $c01-side-title-bg;
+    border: 1px solid $c01-side-title-border;
+  }
+  a{
+    color: $c01-side-link-color;
+    &:hover{
+      color: $c01-side-hover-color;
+    }
+  }
+  ul{
+    li{
+      border-bottom: 1px solid $c01-border-color;
+    } 
+  }
+  .post-date {
+    color: #999999;
+  }
+}
+
+/* search */
+.widget_search{
+  border: 1px solid $c01-border-color;
+  button{
+    color: $c01-gray;
+  }
+}
+
+/* comment */
+
+.recentcomments{
+  color: #808080;
+  a{
+    color: $c01-text-color;
+  }
+}
+
+/* follow */
+#side .share-list-wrap{
+  background: $c01-base-color;
+}
+
+
+/* ----------------------------------------
+* footer
+---------------------------------------- */
+
+#footer{
+  color: $c01-footer-color;
+  border-top: 8px solid $c01-footer-border-top;
+  a{
+    color: $c01-footer-link-color;
+    &:hover{
+      color: $c01-footer-hover-color;
+    }
+  }
+}
+#footer-brand-area{
+  border-bottom: 1px solid $c01-main-color;
+}
+.footer-01{
+  background: $c01-footer-01-bg;
+}
+.footer-02{
+  background: $c01-footer-02-bg;
+}
+
+
+/* ----------------------------------------
+* LP
+---------------------------------------- */
+
+.single-lp{
+  .lp-wrap{
+    border: 1px solid $c01-border-color-light;
+    background: $c01-lp-wrap-bg;
+  }
+  .lp-thumbnail{
+    border: 1px #ccc solid;
+    border: 1px #ccc solid;
+  }
+  #lp-header{
+    background: $c01-lp-head-bg;
+    h1{
+      color: $c01-main-color;
+      border-bottom: 1px solid $c01-border-color-light;
+      
+    }
+  }
+  .lp-form{
+    background: #494c4e;
+    color: #fff;
+    input[type=submit],
+    button{
+      background: $c01-post-cta-btn-bg;
+      color: $c01-post-cta-btn-color;
+      border-bottom: 5px solid darken( $c01-post-cta-btn-bg, 10% );
+      &:hover{
+        background: lighten($c01-post-cta-btn-bg, 5%);
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* pagetop
+---------------------------------------- */
+
+.pagetop{
+  color: #fff;
+  span{
+    background: #2b2b2b;
+  }
+}
+
+} // カラースキーム01 end
+
+/* ----------------------------------------
+* カラースキーム 02 青
+---------------------------------------- */
+// color ========================================
+
+// common
+//----------------------------------------
+
+$c02-base-color:      #fff;
+$c02-base-color-2:    #fafafa;
+$c02-main-color:      #36373C;
+$c02-main-color-2:    #2E2F33;
+$c02-main-color-3:    #005990;
+$c02-accent-color:    #14A0EE;
+
+$c02-text-color:      #4E4E4E;
+
+$c02-border-color:        #e5e5e5;
+$c02-border-color-light:  #eee;
+
+$c02-gray:          #5e6265;
+$c02-gray-light:    #cccccc;
+
+$c02-dark:          #131D2A;
+
+// link ----------------------------------
+
+$c02-link-color: $c02-accent-color;
+$c02-side-link-color: $c02-accent-color;
+
+// header --------------------------------
+
+$c02-header-text-logo:  $c02-base-color;
+$c02-header-bg:         $c02-main-color-3;
+
+// gnav ----------------------------------
+
+$c02-gnav-bg:           $c02-main-color-3;
+$c02-gnav-hover-bg:     lighten( $c02-gnav-bg, 5% );
+$c02-gnav-link-color:      #fff;
+$c02-gnav-hover-color:  $c02-gnav-link-color;
+
+// frontpage --------------------------------
+
+$c02-mainv-bg-1:    #0063A2;
+$c02-mainv-bg-2:    #005990;
+$c02-mainv-color:  #fff;
+
+// content --------------------------------
+
+// main --------------------------------
+// post-cta --------------------------------
+
+$c02-post-cta-bg:     $c02-dark;
+$c02-post-cta-color:  $c02-base-color;
+$c02-post-cta-btn-bg: #F86222;
+$c02-post-cta-btn-color: #fff;
+
+$c02-post-meta-bg:      #1F3145;
+$c02-post-meta-bg-2:    #1C2B3D;
+$c02-post-meta-color:   #fff;
+
+// single-lp --------------------------------
+
+$c02-lp-wrap-bg:  #fff;
+$c02-lp-head-bg:  $c02-main-color-3;
+
+// side --------------------------------
+
+$c02-side-link-color:   $c02-main-color-3;
+$c02-side-hover-color:  $c02-main-color-3;
+
+$c02-side-title-bg:     #ebebeb;
+$c02-side-title-border: #e4e4e4;
+
+// footer --------------------------------
+
+$c02-footer-border-top:   $c02-main-color;
+
+$c02-footer-color:        #fff;
+$c02-footer-link-color:   #fff;
+$c02-footer-hover-color:  #ccc;
+
+$c02-footer-01-bg:        $c02-main-color;
+$c02-footer-02-bg:        $c02-main-color-2;
+
+// sp --------------------------------
+
+$c02-gnav-sp-bg:          $c02-main-color;
+/* ----------------------------------------
+* frontpage
+---------------------------------------- */
+
+body.home.color02{
+  #main_visual{
+    background: $c02-mainv-bg-1;
+    background-image: linear-gradient(to top left, $c02-mainv-bg-1, $c02-mainv-bg-2);
+    color: $c02-mainv-color;
+  }
+  
+  // 人気の記事・最新記事
+  .front-loop{
+    border-top: 1px solid $c02-border-color;
+    border-bottom: 1px solid $c02-border-color;
+    background: $c02-base-color;
+    h2{
+      border-bottom: 1px solid $c02-border-color;
+    }
+    .popular_post_box{
+      h3{
+        color: $c02-text-color;
+        a{
+          color: $c02-text-color;
+          &:hover{
+            color: $c02-accent-color;
+          }
+        }
+      }
+      ul{
+        a{
+          color: $c02-text-color;
+          &:hover{
+            color: $c02-accent-color;
+          }
+        }
+      }
+      .p_category{
+        background: $c02-main-color-3;
+        color: $c02-base-color;
+        color: $c02-base-color;
+      }
+      .p_rank{
+        background: #900;
+        color: $c02-base-color;
+      }
+      .p_date{
+        background: $c02-main-color;
+        color: $c02-base-color;
+      }
+    }
+  }
+  
+  // コンテンツ紹介・サービス紹介
+  .front-main-cont{
+    .front-cont-header{
+      background: $c02-main-color;
+      color: $c02-base-color;
+    }
+    .tri-border{
+      span{
+        border-left: 28px solid transparent;
+        border-left: 56px solid transparent;
+        border-right: 56px solid transparent;
+        border-top: 18px solid $c02-main-color;
+      }
+    } 
+  }
+  // コンテンツ紹介
+  #front-contents{
+    .c_box{
+      border-bottom: 1px solid $c02-border-color;
+    }
+    .c_box.c_box_left{
+      background-color: $c02-base-color;
+    }
+    .c_box.c_box_right{
+      background-color: $c02-base-color-2;
+    }
+    .c_number{
+      background: $c02-main-color-3;
+      color: $c02-base-color;
+    }
+    h3{
+      color: $c02-main-color-3;
+    }
+    .c_english{
+      color: $c02-main-color-3;
+    }
+    .c_text{
+      .c_btn{
+        a{
+          background: $c02-accent-color;
+          color: $c02-base-color;
+          text-shadow: 0 0 3px rgba(0,0,0,0.5);
+        }
+      }
+    }
+  }
+  // サービス
+  #front-service{
+    background: $c02-base-color;
+    border-bottom: 1px solid $c02-border-color;
+    .front-service-inner{
+      h3{
+        color: $c02-main-color-3;
+      }
+      .c_english{
+        color: $c02-main-color-3;
+      }
+      .c_text{
+        .c_btn{
+          a{
+            background: $c02-main-color-3;
+            color: $c02-base-color;
+            text-shadow: 0 0 3px rgba(0,0,0,0.5);
+          }
+        }
+      }
+    }
+  }
+  // 会社概要
+  #front-company{
+    background: $c02-base-color;
+    .c_box{
+      border-bottom: 1px solid $c02-border-color;
+    }
+    dl{
+      border-bottom: 1px solid $c02-border-color;
+    }
+    dl#front-company-1{
+      dt{
+        border-top: 2px solid $c02-main-color-3;
+      }
+      dd{
+        border-top: 1px solid $c02-border-color;
+      }
+    }
+  }
+  // お問い合わせ
+  #front-contact{
+    background: $c02-main-color-3;
+    .c_box_inner{
+      input[type=submit],
+      button{
+        background: $c02-dark;
+      }
+    }
+  }
+}
+
+body.color02{
+
+  color: $c02-text-color; 
+a{
+  color: $c02-link-color;
+}
+
+
+/* form
+---------------------------------------- */
+
+form{
+  input[type="submit"],
+  button{
+    background: $c02-main-color;
+    color: #fff;
+  }
+}
+
+/* ----------------------------------------
+* header
+---------------------------------------- */
+
+#header{
+  background: $c02-header-bg;
+  a{
+    color: $c02-header-text-logo;
+  }
+}
+
+
+/* ----------------------------------------
+* breadcrumb
+---------------------------------------- */
+
+
+.breadcrumb-area{
+  background: #fff;
+  border-bottom: 1px solid $c02-border-color;
+}
+
+
+/* ----------------------------------------
+* gloval nav & primary nav
+---------------------------------------- */
+
+#gnav{
+  background: $c02-gnav-bg;
+  ul{
+    li{
+      &:hover{
+        a{
+          background: $c02-gnav-hover-bg;
+        }
+      }
+      &.current-menu-item{
+        a{
+          background: $c02-gnav-hover-bg;
+        }
+      }
+      a{
+        color: $c02-gnav-link-color;
+        background: $c02-gnav-bg;
+        &:hover{
+          color: $c02-gnav-hover-color;
+          background: $c02-gnav-hover-bg;
+        }
+      }
+      .sub-menu{
+        background: #fff;
+        border: 1px $c02-border-color solid;
+        li{
+          border-bottom: 1px $c02-border-color solid;
+          a{
+            color: $c02-main_color;
+            background: #fff;
+            &:hover{
+              background: #fafafa;
+              color: $c02-main_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#header-fnav-area{
+  #header-fnav-btn{
+    a{
+      background: $c02-gnav-hover-bg;
+    }
+  }
+  #header-fnav{
+    background: #fff;
+    border: 1px $c02-border-color solid;
+    li{
+      border-bottom: 1px $c02-border-color solid;
+      a{
+        color: $c02-main_color;
+        background: #fff;
+        &:hover{
+          background: #fafafa;
+          color: $c02-main_color;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* ----------------------------------------
+* main
+---------------------------------------- */
+
+.cat-content,
+article.post,
+article.page{
+  background: #fff;
+  border: 1px $c02-border-color solid;
+}
+.post-header{
+  padding: 56px 64px 46px;
+  border-bottom: 1px solid $c02-border-color;  
+  .cat-name{
+    span{
+      border: 1px solid $c02-main-color-3;
+      color: $c02-main-color-3;
+    }
+  }
+}
+.post-title{
+  a{
+    color: $c02-text-color;
+    &:hover{
+      color: $c02-accent-color;
+    }
+  }
+}
+.post-title{
+  a{
+    color: $c02-main-color;
+    &:hover{
+      color: $c02-accent-color;
+    }
+  }
+}
+.post-meta-area{
+  border-bottom: 1px solid $c02-border-color;
+  .post-meta-comment{
+    li{
+      border-left: 1px solid $c02-border-color;
+    }
+  }
+
+}
+.post-content{
+  hr{
+    border-bottom: 1px solid $c02-border-color-light;
+  }
+  h2{
+    border-left: 10px solid $c02-dark;
+    background: $c02-main-color;
+    color: $c02-base-color;
+  }
+  h3{
+    border-bottom: 2px solid $c02-main-color;
+  }
+  h4{
+    border-left: 5px solid $c02-dark;
+    clear: both;
+  }
+  blockquote{
+    border: 1px $c02-border-color solid;
+    background: $c02-base-color-2;
+    &:before{
+      color: #e7e7e7;
+    }
+    cite{
+      color: #808080;
+    }
+  }
+  table{
+    border: 1px #ddd solid;
+    th,
+    td{
+      border: #ddd solid 1px;
+    }
+    th{
+      color: #fff;
+    }
+    thead{
+      th{
+        background: $c02-gray;
+      }
+    }
+    tbody{
+      th{
+        background: lighten($c02-gray, 20%); 
+      }
+    }
+    &.table-line{
+      table,
+      th,
+      td{
+        border-color: #fff;
+      }
+      th{
+        color: $c02-text_color;
+      }
+      thead{
+        th{
+          background: $c02-gray;
+          color: #fff;
+        }
+      }
+      tr{
+        background: #eee;
+      }
+      tr:nth-child(2n+1) {
+        background: #ddd;
+      }
+    }
+  }
+}
+
+.post-cta{
+  background: $c02-post-cta-bg;
+  color: $c02-post-cta-color;
+  .cta-post-title{
+    border-bottom: 1px solid $c02-border-color-light;
+  }
+  .post-cta-btn{
+    a{
+      background: $c02-post-cta-btn-bg;
+      color: $c02-post-cta-btn-color;
+      &:hover{
+        background: lighten($c02-post-cta-btn-bg,10%);
+      }
+    }
+  }
+  .btn{
+    background: $c02-main-color;
+    &:hover{
+      background: $c02-accent-color;
+    }
+  }
+}
+
+.post-share{
+  .post-share-list1,
+  .post-share-list2,
+  .post-share-list3,
+  .post-share-list4{
+    a{
+      border: 1px #eee solid;
+      &:hover{
+        background: #f7f7f7;
+      }
+    }
+  }
+}
+.post-author{
+  border: 1px solid $c02-border-color;
+  color: $c02-text-color;
+  background: $c02-base-color;
+  a{
+    color: $c02-main-color;
+  }
+  .post-author-meta{
+    color: $c02-text-color;
+  }
+}
+
+/* comment
+---------------------------------------- */
+
+#comments{
+  border: 1px solid $c02-border-color;
+  background: #fff;
+  h4{
+    border-bottom: 5px solid $c02-main-color;
+    i{
+      color: $c02-main-color;
+    }
+  }
+}
+.comment-list > .comment{
+  border-bottom: 1px #eee solid;
+}
+.comment-list{
+  .children{
+    .comment-body{
+      background: #f7f7f7;
+    }
+  }
+}
+
+
+/* loop
+---------------------------------------- */
+
+.cat-content{
+  background: #fff;
+}
+
+.post-loop-wrap{
+  .more-link{
+    border: 1px $c02-main-color solid;
+    color: $c02-main_color;
+    &:hover{
+      background: $c02-main_color;
+      color: #fff;
+    }
+  }
+  .post-footer{
+    border-top: 1px $c02-border-color-light solid;
+    a.morelink{
+      background: $c02-main-color;
+      color: #fff;
+    }
+  }
+
+}
+
+/* pager */
+
+.pagination span, .pagination a {
+  color: $c02-text_color;
+  background: #fff;
+}
+ 
+.pagination a:hover{
+  color:#fff;
+  background: #3279BB;
+}
+ 
+.pagination .current{
+  background: #3279BB;
+  color:#fff;
+}
+
+/* ----------------------------------------
+* side
+---------------------------------------- */
+
+.side-widget{
+  .side-title{
+    background: $c02-side-title-bg;
+    border: 1px solid $c02-side-title-border;
+  }
+  a{
+    color: $c02-side-link-color;
+    &:hover{
+      color: $c02-side-hover-color;
+    }
+  }
+  ul{
+    li{
+      border-bottom: 1px solid $c02-border-color;
+    } 
+  }
+  .post-date {
+    color: #999999;
+  }
+}
+
+/* search */
+.widget_search{
+  border: 1px solid $c02-border-color;
+  button{
+    color: $c02-gray;
+  }
+}
+
+/* comment */
+
+.recentcomments{
+  color: #808080;
+  a{
+    color: $c02-text-color;
+  }
+}
+
+/* follow */
+#side .share-list-wrap{
+  background: $c02-base-color;
+}
+
+
+/* ----------------------------------------
+* footer
+---------------------------------------- */
+
+#footer{
+  color: $c02-footer-color;
+  border-top: 8px solid $c02-footer-border-top;
+  a{
+    color: $c02-footer-link-color;
+    &:hover{
+      color: $c02-footer-hover-color;
+    }
+  }
+}
+#footer-brand-area{
+  border-bottom: 1px solid $c02-main-color;
+}
+.footer-01{
+  background: $c02-footer-01-bg;
+}
+.footer-02{
+  background: $c02-footer-02-bg;
+}
+
+
+/* ----------------------------------------
+* LP
+---------------------------------------- */
+
+.single-lp{
+  .lp-wrap{
+    border: 1px solid $c02-border-color-light;
+    background: $c02-lp-wrap-bg;
+  }
+  .lp-thumbnail{
+    border: 1px #ccc solid;
+    border: 1px #ccc solid;
+  }
+  #lp-header{
+    background: $c02-lp-head-bg;
+    h1{
+      color: $c02-main-color;
+      border-bottom: 1px solid $c02-border-color-light;
+      
+    }
+  }
+  .lp-form{
+    background: #494c4e;
+    color: #fff;
+    input[type=submit],
+    button{
+      background: $c02-post-cta-btn-bg;
+      color: $c02-post-cta-btn-color;
+      border-bottom: 5px solid darken( $c02-post-cta-btn-bg, 10% );
+      &:hover{
+        background: lighten($c02-post-cta-btn-bg, 5%);
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* pagetop
+---------------------------------------- */
+
+.pagetop{
+  color: #fff;
+  span{
+    background: #2b2b2b;
+  }
+}
+
+} // カラースキーム02 end
+
+
+/* ----------------------------------------
+* カラースキーム 03 紺
+---------------------------------------- */
+// color ========================================
+
+// common
+//----------------------------------------
+
+$c03-base-color:      #fff;
+$c03-base-color-2:    #fafafa;
+$c03-main-color:      #343434;
+$c03-main-color-2:    #333333;
+$c03-main-color-3:    #27343c;
+$c03-accent-color:    #ca6666;
+
+$c03-text-color:      #484A4E;
+
+$c03-border-color:        #e5e5e5;
+$c03-border-color-light:  #eee;
+
+$c03-gray:          #5e6265;
+$c03-gray-light:    #cccccc;
+
+$c03-dark:          #131D2A;
+
+// link ----------------------------------
+
+$c03-link-color: $c03-accent-color;
+$c03-side-link-color: $c03-accent-color;
+
+// header --------------------------------
+
+$c03-header-text-logo:  $c03-base-color;
+$c03-header-bg:         $c03-main-color-3;
+
+// gnav ----------------------------------
+
+$c03-gnav-bg:           $c03-main-color-3;
+$c03-gnav-hover-bg:     lighten( $c03-gnav-bg, 5% );
+$c03-gnav-link-color:      #fff;
+$c03-gnav-hover-color:  $c03-gnav-link-color;
+
+// frontpage --------------------------------
+
+$c03-mainv-bg-1:    #394B57;
+$c03-mainv-bg-2:    #28343C;
+$c03-mainv-color:  #fff;
+
+// content --------------------------------
+
+// main --------------------------------
+// post-cta --------------------------------
+
+$c03-post-cta-bg:     $c03-dark;
+$c03-post-cta-color:  $c03-base-color;
+$c03-post-cta-btn-bg: #F86222;
+$c03-post-cta-btn-color: #fff;
+
+$c03-post-meta-bg:      #1F3145;
+$c03-post-meta-bg-2:    #1C2B3D;
+$c03-post-meta-color:   #fff;
+
+// single-lp --------------------------------
+
+$c03-lp-wrap-bg:  #fff;
+$c03-lp-head-bg:  $c03-main-color-3;
+
+// side --------------------------------
+
+$c03-side-link-color:   $c03-main-color-3;
+$c03-side-hover-color:  $c03-main-color-3;
+
+$c03-side-title-bg:     #ebebeb;
+$c03-side-title-border: #e4e4e4;
+
+// footer --------------------------------
+
+$c03-footer-border-top:   $c03-main-color;
+
+$c03-footer-color:        #fff;
+$c03-footer-link-color:   #fff;
+$c03-footer-hover-color:  #ccc;
+
+$c03-footer-01-bg:        $c03-main-color;
+$c03-footer-02-bg:        $c03-main-color-2;
+
+// sp --------------------------------
+
+$c03-gnav-sp-bg:          $c03-main-color;
+
+
+/* ----------------------------------------
+* frontpage
+---------------------------------------- */
+
+body.home.color03{
+  #main_visual{
+    background: $c03-mainv-bg-1;
+    background-image: linear-gradient(to top left, $c03-mainv-bg-1, $c03-mainv-bg-2);
+    color: $c03-mainv-color;
+  }
+  
+  // 人気の記事・最新記事
+  .front-loop{
+    border-top: 1px solid $c03-border-color;
+    border-bottom: 1px solid $c03-border-color;
+    background: $c03-base-color;
+    h2{
+      border-bottom: 1px solid $c03-border-color;
+    }
+    .popular_post_box{
+      h3{
+        color: $c03-text-color;
+        a{
+          color: $c03-text-color;
+          &:hover{
+            color: $c03-accent-color;
+          }
+        }
+      }
+      ul{
+        a{
+          color: $c03-text-color;
+          &:hover{
+            color: $c03-accent-color;
+          }
+        }
+      }
+      .p_category{
+        background: $c03-base-color;
+        border: 1px solid $c03-accent-color;
+        color: $c03-accent-color;
+      }
+      .p_rank{
+        background: #900;
+        color: $c03-base-color;
+      }
+      .p_date{
+        background: $c03-main-color;
+        color: $c03-base-color;
+      }
+    }
+  }
+  
+  // コンテンツ紹介・サービス紹介
+  .front-main-cont{
+    .front-cont-header{
+      background: $c03-main-color;
+      color: $c03-base-color;
+    }
+    .tri-border{
+      span{
+        border-left: 28px solid transparent;
+        border-left: 56px solid transparent;
+        border-right: 56px solid transparent;
+        border-top: 18px solid $c03-main-color;
+      }
+    } 
+  }
+  // コンテンツ紹介
+  #front-contents{
+    .c_box{
+      border-bottom: 1px solid $c03-border-color;
+    }
+    .c_box.c_box_left{
+      background-color: $c03-base-color;
+    }
+    .c_box.c_box_right{
+      background-color: $c03-base-color-2;
+    }
+    .c_number{
+      background: $c03-main-color-3;
+      color: $c03-base-color;
+    }
+    h3{
+      color: $c03-main-color-3;
+    }
+    .c_english{
+      color: $c03-main-color-3;
+    }
+    .c_text{
+      .c_btn{
+        a{
+          background: $c03-accent-color;
+          color: $c03-base-color;
+          text-shadow: 0 0 3px rgba(0,0,0,0.5);
+        }
+      }
+    }
+  }
+  // サービス
+  #front-service{
+    background: $c03-base-color;
+    border-bottom: 1px solid $c03-border-color;
+    .front-service-inner{
+      h3{
+        color: $c03-main-color-3;
+      }
+      .c_english{
+        color: $c03-main-color-3;
+      }
+      .c_text{
+        .c_btn{
+          a{
+            background: $c03-main-color-3;
+            color: $c03-base-color;
+            text-shadow: 0 0 3px rgba(0,0,0,0.5);
+          }
+        }
+      }
+    }
+  }
+  // 会社概要
+  #front-company{
+    background: $c03-base-color;
+    .c_box{
+      border-bottom: 1px solid $c03-border-color;
+    }
+    dl{
+      border-bottom: 1px solid $c03-border-color;
+    }
+    dl#front-company-1{
+      dt{
+        border-top: 2px solid $c03-main-color-3;
+      }
+      dd{
+        border-top: 1px solid $c03-border-color;
+      }
+    }
+  }
+  // お問い合わせ
+  #front-contact{
+    background: $c03-accent-color;
+    .c_box_inner{
+      input[type=submit],
+      button{
+        background: $c03-dark;
+      }
+    }
+  }
+}
+
+
+/* ----------------------------------------
+* all
+---------------------------------------- */
+
+body.color03{
+  color: $c03-text-color; 
+a{
+  color: $c03-link-color;
+}
+
+
+/* form
+---------------------------------------- */
+
+form{
+  input[type="submit"],
+  button{
+    background: $c03-main-color;
+    color: #fff;
+  }
+}
+
+/* ----------------------------------------
+* header
+---------------------------------------- */
+
+#header{
+  background: $c03-header-bg;
+  a{
+    color: $c03-header-text-logo;
+  }
+}
+
+
+/* ----------------------------------------
+* breadcrumb
+---------------------------------------- */
+
+
+.breadcrumb-area{
+  background: #fff;
+  border-bottom: 1px solid $c03-border-color;
+}
+
+
+/* ----------------------------------------
+* gloval nav & primary nav
+---------------------------------------- */
+
+#gnav{
+  background: $c03-gnav-bg;
+  ul{
+    li{
+      &:hover{
+        a{
+          background: $c03-gnav-hover-bg;
+        }
+      }
+      &.current-menu-item{
+        a{
+          background: $c03-gnav-hover-bg;
+        }
+      }
+      a{
+        color: $c03-gnav-link-color;
+        background: $c03-gnav-bg;
+        &:hover{
+          color: $c03-gnav-hover-color;
+          background: $c03-gnav-hover-bg;
+        }
+      }
+      .sub-menu{
+        background: #fff;
+        border: 1px $c03-border-color solid;
+        li{
+          border-bottom: 1px $c03-border-color solid;
+          a{
+            color: $c03-main_color;
+            background: #fff;
+            &:hover{
+              background: #fafafa;
+              color: $c03-main_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#header-fnav-area{
+  #header-fnav-btn{
+    a{
+      background: $c03-gnav-hover-bg;
+    }
+  }
+  #header-fnav{
+    background: #fff;
+    border: 1px $c03-border-color solid;
+    li{
+      border-bottom: 1px $c03-border-color solid;
+      a{
+        color: $c03-main_color;
+        background: #fff;
+        &:hover{
+          background: #fafafa;
+          color: $c03-main_color;
+        }
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* main
+---------------------------------------- */
+
+.cat-content,
+article.post,
+article.page{
+  background: #fff;
+  border: 1px $c03-border-color solid;
+}
+.post-header{
+  padding: 56px 64px 46px;
+  border-bottom: 1px solid $c03-border-color;  
+  .cat-name{
+    span{
+      border: 1px solid $c03-main-color-3;
+      color: $c03-main-color-3;
+    }
+  }
+}
+.post-title{
+  a{
+    color: $c03-text-color;
+    &:hover{
+      color: $c03-accent-color;
+    }
+  }
+}
+.post-title{
+  a{
+    color: $c03-main-color;
+    &:hover{
+      color: $c03-accent-color;
+    }
+  }
+}
+.post-meta-area{
+  border-bottom: 1px solid $c03-border-color;
+  .post-meta-comment{
+    li{
+      border-left: 1px solid $c03-border-color;
+    }
+  }
+
+}
+.post-content{
+  hr{
+    border-bottom: 1px solid $c03-border-color-light;
+  }
+  h2{
+    border-left: 10px solid $c03-dark;
+    background: $c03-main-color;
+    color: $c03-base-color;
+  }
+  h3{
+    border-bottom: 2px solid $c03-main-color;
+  }
+  h4{
+    border-left: 5px solid $c03-dark;
+    clear: both;
+  }
+  blockquote{
+    border: 1px $c03-border-color solid;
+    background: $c03-base-color-2;
+    &:before{
+      color: #e7e7e7;
+    }
+    cite{
+      color: #808080;
+    }
+  }
+  table{
+    border: 1px #ddd solid;
+    th,
+    td{
+      border: #ddd solid 1px;
+    }
+    th{
+      color: #fff;
+    }
+    thead{
+      th{
+        background: $c03-gray;
+      }
+    }
+    tbody{
+      th{
+        background: lighten($c03-gray, 20%); 
+      }
+    }
+    &.table-line{
+      table,
+      th,
+      td{
+        border-color: #fff;
+      }
+      th{
+        color: $c03-text_color;
+      }
+      thead{
+        th{
+          background: $c03-gray;
+          color: #fff;
+        }
+      }
+      tr{
+        background: #eee;
+      }
+      tr:nth-child(2n+1) {
+        background: #ddd;
+      }
+    }
+  }
+}
+
+.post-cta{
+  background: $c03-post-cta-bg;
+  color: $c03-post-cta-color;
+  .cta-post-title{
+    border-bottom: 1px solid $c03-border-color-light;
+  }
+  .post-cta-btn{
+    a{
+      background: $c03-post-cta-btn-bg;
+      color: $c03-post-cta-btn-color;
+      &:hover{
+        background: lighten($c03-post-cta-btn-bg,10%);
+      }
+    }
+  }
+  .btn{
+    background: $c03-main-color;
+    &:hover{
+      background: $c03-accent-color;
+    }
+  }
+}
+
+.post-share{
+  .post-share-list1,
+  .post-share-list2,
+  .post-share-list3,
+  .post-share-list4{
+    a{
+      border: 1px #eee solid;
+      &:hover{
+        background: #f7f7f7;
+      }
+    }
+  }
+}
+.post-author{
+  border: 1px solid $c03-border-color;
+  color: $c03-text-color;
+  background: $c03-base-color;
+  a{
+    color: $c03-main-color;
+  }
+  .post-author-meta{
+    color: $c03-text-color;
+  }
+}
+
+/* comment
+---------------------------------------- */
+
+#comments{
+  border: 1px solid $c03-border-color;
+  background: #fff;
+  h4{
+    border-bottom: 5px solid $c03-main-color;
+    i{
+      color: $c03-main-color;
+    }
+  }
+}
+.comment-list > .comment{
+  border-bottom: 1px #eee solid;
+}
+.comment-list{
+  .children{
+    .comment-body{
+      background: #f7f7f7;
+    }
+  }
+}
+
+
+/* loop
+---------------------------------------- */
+
+.cat-content{
+  background: #fff;
+}
+
+.post-loop-wrap{
+  .more-link{
+    border: 1px $c03-main-color solid;
+    color: $c03-main_color;
+    &:hover{
+      background: $c03-main_color;
+      color: #fff;
+    }
+  }
+  .post-footer{
+    border-top: 1px $c03-border-color-light solid;
+    a.morelink{
+      background: $c03-main-color;
+      color: #fff;
+    }
+  }
+
+}
+
+/* pager */
+
+.pagination span, .pagination a {
+  color: $c03-text_color;
+  background: #fff;
+}
+ 
+.pagination a:hover{
+  color:#fff;
+  background: #3279BB;
+}
+ 
+.pagination .current{
+  background: #3279BB;
+  color:#fff;
+}
+
+/* ----------------------------------------
+* side
+---------------------------------------- */
+
+.side-widget{
+  .side-title{
+    background: $c03-side-title-bg;
+    border: 1px solid $c03-side-title-border;
+  }
+  a{
+    color: $c03-side-link-color;
+    &:hover{
+      color: $c03-side-hover-color;
+    }
+  }
+  ul{
+    li{
+      border-bottom: 1px solid $c03-border-color;
+    } 
+  }
+  .post-date {
+    color: #999999;
+  }
+}
+
+/* search */
+.widget_search{
+  border: 1px solid $c03-border-color;
+  button{
+    color: $c03-gray;
+  }
+}
+
+/* comment */
+
+.recentcomments{
+  color: #808080;
+  a{
+    color: $c03-text-color;
+  }
+}
+
+/* follow */
+#side .share-list-wrap{
+  background: $c03-base-color;
+}
+
+
+/* ----------------------------------------
+* footer
+---------------------------------------- */
+
+#footer{
+  color: $c03-footer-color;
+  border-top: 8px solid $c03-footer-border-top;
+  a{
+    color: $c03-footer-link-color;
+    &:hover{
+      color: $c03-footer-hover-color;
+    }
+  }
+}
+#footer-brand-area{
+  border-bottom: 1px solid $c03-main-color;
+}
+.footer-01{
+  background: $c03-footer-01-bg;
+}
+.footer-02{
+  background: $c03-footer-02-bg;
+}
+
+
+/* ----------------------------------------
+* LP
+---------------------------------------- */
+
+.single-lp{
+  .lp-wrap{
+    border: 1px solid $c03-border-color-light;
+    background: $c03-lp-wrap-bg;
+  }
+  .lp-thumbnail{
+    border: 1px #ccc solid;
+    border: 1px #ccc solid;
+  }
+  #lp-header{
+    background: $c03-lp-head-bg;
+    h1{
+      color: $c03-main-color;
+      border-bottom: 1px solid $c03-border-color-light;
+      
+    }
+  }
+  .lp-form{
+    background: #494c4e;
+    color: #fff;
+    input[type=submit],
+    button{
+      background: $c03-post-cta-btn-bg;
+      color: $c03-post-cta-btn-color;
+      border-bottom: 5px solid darken( $c03-post-cta-btn-bg, 10% );
+      &:hover{
+        background: lighten($c03-post-cta-btn-bg, 5%);
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* pagetop
+---------------------------------------- */
+
+.pagetop{
+  color: #fff;
+  span{
+    background: #2b2b2b;
+  }
+}
+
+} // カラースキーム03 end
+
+/* ----------------------------------------
+* カラースキーム 04
+---------------------------------------- */
+// color ========================================
+
+// common
+//----------------------------------------
+
+$c04-base-color:      #fff;
+$c04-base-color-2:    #fafafa;
+$c04-main-color:      #333333;
+$c04-main-color-2:    #191B1D;
+$c04-main-color-3:    #FB5235;
+$c04-accent-color:    #2B9CFB;
+
+$c04-text-color:      #666666;
+
+$c04-border-color:        #e5e5e5;
+$c04-border-color-light:  #eee;
+
+$c04-gray:          #5e6265;
+$c04-gray-light:    #cccccc;
+
+$c04-dark:          #131D2A;
+
+// link ----------------------------------
+
+$c04-link-color: $c04-main-color;
+$c04-side-link-color: $c04-main-color;
+
+// header --------------------------------
+
+$c04-header-text-logo:  $c04-base-color;
+$c04-header-bg:         $c04-main-color-3;
+
+// gnav ----------------------------------
+
+$c04-gnav-bg:           $c04-main-color-3;
+$c04-gnav-hover-bg:     lighten( $c04-gnav-bg, 5% );
+$c04-gnav-link-color:      #fff;
+$c04-gnav-hover-color:  $c04-gnav-link-color;
+
+// frontpage --------------------------------
+
+$c04-mainv-bg-1:    #FB6C4D;
+$c04-mainv-bg-2:    #FB5235;
+$c04-mainv-color:  #fff;
+
+// content --------------------------------
+
+// main --------------------------------
+// post-cta --------------------------------
+
+$c04-post-cta-bg:     $c04-dark;
+$c04-post-cta-color:  $c04-base-color;
+$c04-post-cta-btn-bg: #F86222;
+$c04-post-cta-btn-color: #fff;
+
+$c04-post-meta-bg:      #1F3145;
+$c04-post-meta-bg-2:    #1C2B3D;
+$c04-post-meta-color:   #fff;
+
+// single-lp --------------------------------
+
+$c04-lp-wrap-bg:  #fff;
+$c04-lp-head-bg:  $c04-main-color-3;
+
+// side --------------------------------
+
+$c04-side-link-color:   $c04-main-color-3;
+$c04-side-hover-color:  $c04-main-color-3;
+
+$c04-side-title-bg:     #ebebeb;
+$c04-side-title-border: #e4e4e4;
+
+// footer --------------------------------
+
+$c04-footer-border-top:   $c04-main-color;
+
+$c04-footer-color:        #fff;
+$c04-footer-link-color:   #fff;
+$c04-footer-hover-color:  #ccc;
+
+$c04-footer-01-bg:        #031731;
+$c04-footer-02-bg:        #010A17;
+
+// sp --------------------------------
+
+$c04-gnav-sp-bg:          $c04-main-color;
+
+
+
+
+
+
+/* ----------------------------------------
+* frontpage
+---------------------------------------- */
+
+body.home.color04{
+  #main_visual{
+    background: $c04-mainv-bg-1;
+    background-image: linear-gradient(to top left, $c04-mainv-bg-1, $c04-mainv-bg-2);
+    color: $c04-mainv-color;
+  }
+  
+  // 人気の記事・最新記事
+  .front-loop{
+    border-top: 1px solid $c04-border-color;
+    border-bottom: 1px solid $c04-border-color;
+    background: $c04-base-color;
+    h2{
+      border-bottom: 1px solid $c04-border-color;
+    }
+    .popular_post_box{
+      h3{
+        color: $c04-text-color;
+        a{
+          color: $c04-text-color;
+          &:hover{
+            color: $c04-accent-color;
+          }
+        }
+      }
+      ul{
+        a{
+          color: $c04-text-color;
+          &:hover{
+            color: $c04-accent-color;
+          }
+        }
+      }
+      .p_category{
+        background: $c04-main-color;
+        color: $c04-base-color;
+      }
+      .p_rank{
+        background: #900;
+        color: $c04-base-color;
+      }
+      .p_date{
+        background: $c04-main-color;
+        color: $c04-base-color;
+      }
+    }
+  }
+  
+  // コンテンツ紹介・サービス紹介
+  .front-main-cont{
+    .front-cont-header{
+      background: $c04-main-color;
+      color: $c04-base-color;
+    }
+    .tri-border{
+      span{
+        border-left: 28px solid transparent;
+        border-left: 56px solid transparent;
+        border-right: 56px solid transparent;
+        border-top: 18px solid $c04-main-color;
+      }
+    } 
+  }
+  // コンテンツ紹介
+  #front-contents{
+    .c_box{
+      border-bottom: 1px solid $c04-border-color;
+    }
+    .c_box.c_box_left{
+      background-color: $c04-base-color;
+    }
+    .c_box.c_box_right{
+      background-color: $c04-base-color-2;
+    }
+    .c_number{
+      background: $c04-main-color-3;
+      color: $c04-base-color;
+    }
+    h3{
+      color: $c04-main-color-3;
+    }
+    .c_english{
+      color: $c04-main-color-3;
+    }
+    .c_text{
+      .c_btn{
+        a{
+          background: $c04-accent-color;
+          color: $c04-base-color;
+          text-shadow: 0 0 3px rgba(0,0,0,0.5);
+        }
+      }
+    }
+  }
+  // サービス
+  #front-service{
+    background: $c04-base-color;
+    border-bottom: 1px solid $c04-border-color;
+    .front-service-inner{
+      h3{
+        color: $c04-main-color-3;
+      }
+      .c_english{
+        color: $c04-main-color-3;
+      }
+      .c_text{
+        .c_btn{
+          a{
+            background: $c04-main-color-3;
+            color: $c04-base-color;
+            text-shadow: 0 0 3px rgba(0,0,0,0.5);
+          }
+        }
+      }
+    }
+  }
+  // 会社概要
+  #front-company{
+    background: $c04-base-color;
+    .c_box{
+      border-bottom: 1px solid $c04-border-color;
+    }
+    dl{
+      border-bottom: 1px solid $c04-border-color;
+    }
+    dl#front-company-1{
+      dt{
+        border-top: 2px solid $c04-main-color-3;
+      }
+      dd{
+        border-top: 1px solid $c04-border-color;
+      }
+    }
+  }
+  // お問い合わせ
+  #front-contact{
+    background: $c04-main-color-3;
+    .c_box_inner{
+      input[type=submit],
+      button{
+        background: $c04-dark;
+      }
+    }
+  }
+}
+
+
+body.color04{
+
+  color: $c04-text-color; 
+
+a{
+  color: $c04-link-color;
+}
+
+
+/* form
+---------------------------------------- */
+
+form{
+  input[type="submit"],
+  button{
+    background: $c04-main-color;
+    color: #fff;
+  }
+}
+
+/* ----------------------------------------
+* header
+---------------------------------------- */
+
+#header{
+  background: $c04-header-bg;
+  a{
+    color: $c04-header-text-logo;
+  }
+}
+
+
+/* ----------------------------------------
+* breadcrumb
+---------------------------------------- */
+
+
+.breadcrumb-area{
+  background: #fff;
+  border-bottom: 1px solid $c04-border-color;
+}
+
+
+/* ----------------------------------------
+* gloval nav & primary nav
+---------------------------------------- */
+
+#gnav{
+  background: $c04-gnav-bg;
+  ul{
+    li{
+      &:hover{
+        a{
+          background: $c04-gnav-hover-bg;
+        }
+      }
+      &.current-menu-item{
+        a{
+          background: $c04-gnav-hover-bg;
+        }
+      }
+      a{
+        color: $c04-gnav-link-color;
+        background: $c04-gnav-bg;
+        &:hover{
+          color: $c04-gnav-hover-color;
+          background: $c04-gnav-hover-bg;
+        }
+      }
+      .sub-menu{
+        background: #fff;
+        border: 1px $c04-border-color solid;
+        li{
+          border-bottom: 1px $c04-border-color solid;
+          a{
+            color: $c04-main_color;
+            background: #fff;
+            &:hover{
+              background: #fafafa;
+              color: $c04-main_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#header-fnav-area{
+  #header-fnav-btn{
+    a{
+      background: $c04-gnav-hover-bg;
+    }
+  }
+  #header-fnav{
+    background: #fff;
+    border: 1px $c04-border-color solid;
+    li{
+      border-bottom: 1px $c04-border-color solid;
+      a{
+        color: $c04-main_color;
+        background: #fff;
+        &:hover{
+          background: #fafafa;
+          color: $c04-main_color;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* ----------------------------------------
+* main
+---------------------------------------- */
+
+.cat-content,
+article.post,
+article.page{
+  background: #fff;
+  border: 1px $c04-border-color solid;
+}
+.post-header{
+  padding: 56px 64px 46px;
+  border-bottom: 1px solid $c04-border-color;  
+  .cat-name{
+    span{
+      border: 1px solid $c04-main-color-3;
+      color: $c04-main-color-3;
+    }
+  }
+}
+.post-title{
+  a{
+    color: $c04-text-color;
+    &:hover{
+      color: $c04-accent-color;
+    }
+  }
+}
+.post-title{
+  a{
+    color: $c04-main-color;
+    &:hover{
+      color: $c04-accent-color;
+    }
+  }
+}
+.post-meta-area{
+  border-bottom: 1px solid $c04-border-color;
+  .post-meta-comment{
+    li{
+      border-left: 1px solid $c04-border-color;
+    }
+  }
+
+}
+.post-content{
+  hr{
+    border-bottom: 1px solid $c04-border-color-light;
+  }
+  h2{
+    border-left: 10px solid $c04-dark;
+    background: $c04-main-color;
+    color: $c04-base-color;
+  }
+  h3{
+    border-bottom: 2px solid $c04-main-color;
+  }
+  h4{
+    border-left: 5px solid $c04-dark;
+    clear: both;
+  }
+  blockquote{
+    border: 1px $c04-border-color solid;
+    background: $c04-base-color-2;
+    &:before{
+      color: #e7e7e7;
+    }
+    cite{
+      color: #808080;
+    }
+  }
+  table{
+    border: 1px #ddd solid;
+    th,
+    td{
+      border: #ddd solid 1px;
+    }
+    th{
+      color: #fff;
+    }
+    thead{
+      th{
+        background: $c04-gray;
+      }
+    }
+    tbody{
+      th{
+        background: lighten($c04-gray, 20%); 
+      }
+    }
+    &.table-line{
+      table,
+      th,
+      td{
+        border-color: #fff;
+      }
+      th{
+        color: $c04-text_color;
+      }
+      thead{
+        th{
+          background: $c04-gray;
+          color: #fff;
+        }
+      }
+      tr{
+        background: #eee;
+      }
+      tr:nth-child(2n+1) {
+        background: #ddd;
+      }
+    }
+  }
+}
+
+.post-cta{
+  background: $c04-post-cta-bg;
+  color: $c04-post-cta-color;
+  .cta-post-title{
+    border-bottom: 1px solid $c04-border-color-light;
+  }
+  .post-cta-btn{
+    a{
+      background: $c04-post-cta-btn-bg;
+      color: $c04-post-cta-btn-color;
+      &:hover{
+        background: lighten($c04-post-cta-btn-bg,10%);
+      }
+    }
+  }
+  .btn{
+    background: $c04-main-color;
+    &:hover{
+      background: $c04-accent-color;
+    }
+  }
+}
+
+.post-share{
+  .post-share-list1,
+  .post-share-list2,
+  .post-share-list3,
+  .post-share-list4{
+    a{
+      border: 1px #eee solid;
+      &:hover{
+        background: #f7f7f7;
+      }
+    }
+  }
+}
+.post-author{
+  border: 1px solid $c04-border-color;
+  color: $c04-text-color;
+  background: $c04-base-color;
+  a{
+    color: $c04-main-color;
+  }
+  .post-author-meta{
+    color: $c04-text-color;
+  }
+}
+
+/* comment
+---------------------------------------- */
+
+#comments{
+  border: 1px solid $c04-border-color;
+  background: #fff;
+  h4{
+    border-bottom: 5px solid $c04-main-color;
+    i{
+      color: $c04-main-color;
+    }
+  }
+}
+.comment-list > .comment{
+  border-bottom: 1px #eee solid;
+}
+.comment-list{
+  .children{
+    .comment-body{
+      background: #f7f7f7;
+    }
+  }
+}
+
+
+/* loop
+---------------------------------------- */
+
+.cat-content{
+  background: #fff;
+}
+
+.post-loop-wrap{
+  .more-link{
+    border: 1px $c04-main-color solid;
+    color: $c04-main_color;
+    &:hover{
+      background: $c04-main_color;
+      color: #fff;
+    }
+  }
+  .post-footer{
+    border-top: 1px $c04-border-color-light solid;
+    a.morelink{
+      background: $c04-main-color;
+      color: #fff;
+    }
+  }
+
+}
+
+/* pager */
+
+.pagination span, .pagination a {
+  color: $c04-text_color;
+  background: #fff;
+}
+ 
+.pagination a:hover{
+  color:#fff;
+  background: #3279BB;
+}
+ 
+.pagination .current{
+  background: #3279BB;
+  color:#fff;
+}
+
+/* ----------------------------------------
+* side
+---------------------------------------- */
+
+.side-widget{
+  .side-title{
+    background: $c04-side-title-bg;
+    border: 1px solid $c04-side-title-border;
+  }
+  a{
+    color: $c04-side-link-color;
+    &:hover{
+      color: $c04-side-hover-color;
+    }
+  }
+  ul{
+    li{
+      border-bottom: 1px solid $c04-border-color;
+    } 
+  }
+  .post-date {
+    color: #999999;
+  }
+}
+
+/* search */
+.widget_search{
+  border: 1px solid $c04-border-color;
+  button{
+    color: $c04-gray;
+  }
+}
+
+/* comment */
+
+.recentcomments{
+  color: #808080;
+  a{
+    color: $c04-text-color;
+  }
+}
+
+/* follow */
+#side .share-list-wrap{
+  background: $c04-base-color;
+}
+
+
+/* ----------------------------------------
+* footer
+---------------------------------------- */
+
+#footer{
+  color: $c04-footer-color;
+  border-top: 8px solid $c04-footer-border-top;
+  a{
+    color: $c04-footer-link-color;
+    &:hover{
+      color: $c04-footer-hover-color;
+    }
+  }
+}
+#footer-brand-area{
+  border-bottom: 1px solid $c04-main-color;
+}
+.footer-01{
+  background: $c04-footer-01-bg;
+}
+.footer-02{
+  background: $c04-footer-02-bg;
+}
+
+
+/* ----------------------------------------
+* LP
+---------------------------------------- */
+
+.single-lp{
+  .lp-wrap{
+    border: 1px solid $c04-border-color-light;
+    background: $c04-lp-wrap-bg;
+  }
+  .lp-thumbnail{
+    border: 1px #ccc solid;
+    border: 1px #ccc solid;
+  }
+  #lp-header{
+    background: $c04-lp-head-bg;
+    h1{
+      color: $c04-main-color;
+      border-bottom: 1px solid $c04-border-color-light;
+      
+    }
+  }
+  .lp-form{
+    background: #494c4e;
+    color: #fff;
+    input[type=submit],
+    button{
+      background: $c04-post-cta-btn-bg;
+      color: $c04-post-cta-btn-color;
+      border-bottom: 5px solid darken( $c04-post-cta-btn-bg, 10% );
+      &:hover{
+        background: lighten($c04-post-cta-btn-bg, 5%);
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* pagetop
+---------------------------------------- */
+
+.pagetop{
+  color: #fff;
+  span{
+    background: #2b2b2b;
+  }
+}
+
+} // カラースキーム01 end

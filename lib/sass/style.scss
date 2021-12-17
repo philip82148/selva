@@ -1,0 +1,43 @@
+/*   
+Theme Name: XeoryExtension
+Theme URI: http://xeory.jp/extension
+Description: Xeory拡張テーマ
+Author: バズ部
+Author URI: http://bazubu.com/
+Version: 0.1.3
+*/
+
+@import "compass";
+
+
+
+// base用の記述
+// ディスプレイ
+@import "display";
+// コモンCSS
+@import "common";
+
+// sp
+@import "sp";
+// カラー
+@import "color";
+
+
+
+
+
+// all
+//@import "common";
+
+// sns
+//@import "sns";
+
+// sp
+//@import "sp";
+
+// color
+//@import "color";
+//@import "color01";
+//@import "color02";
+//@import "color03";
+//@import "color04";

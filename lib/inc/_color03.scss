@@ -1,0 +1,611 @@
+/* ----------------------------------------
+* color
+---------------------------------------- */
+
+// common
+//----------------------------------------
+$c03-main-color:    #F37D3D;
+$c03-key-color:     #f24e4f;
+$c03-base-color:    #f9f9f9;
+$c03-text-color:    #444756;
+
+$c03-border-color:        #E3E3E3;
+$c03-border-color-light:  $c03-border-color;
+
+$c03-gray:          #5e6265;
+$c03-gray-light:    #cccccc;
+
+// link ----------------------------------
+
+$c03-link-color: $c03-main_color;
+$c03-side-link-color: lighten($c03-text-color, 20%);
+
+// sns ----------
+
+$twitter-color:   #00aced;
+$facebook-color:  #305097;
+$google-color:    #db4a39;
+$hatena-color:    #7db4e8;
+$feedly-color:    #2bb24c;
+
+// header --------------------------------
+
+$c03-header-text-logo:  #21262D;
+$c03-header-bg:         #fff;
+
+// sns
+$c03-header-sns-link:   #ccc; 
+$c03-header-sns-hover:  #21262D;
+
+
+// gnav ----------------------------------
+
+$c03-gnav-bg:           #fff;
+$c03-gnav-hover-bg:     #343434;
+$c03-gnav-link-color:   #2B2D2D;
+$c03-gnav-hover-color:  $c03-gnav-link-color;
+
+$c03-gnav-sub-bg:     #444756;
+$c03-gnav-sub-hover:  #595E62;
+
+// content --------------------------------
+
+// main --------------------------------
+// post-cta --------------------------------
+
+$c03-post-cta-bg:     #f5f5f5;
+$c03-post-cta-color:  $c03-text-color;
+$c03-post-cta-btn-bg: #5ace5f;
+$c03-post-cta-btn-color: #fff;
+
+// single-lp --------------------------------
+
+$c03-lp-wrap-bg:  #fff;
+$c03-lp-head-bg:  $c03-lp-wrap-bg;
+
+// side --------------------------------
+
+$c03-side-link-color:   $c03-gray;
+$c03-side-hover-color:  $main-color;
+
+// footer --------------------------------
+
+$c03-footer-color:        #1E252C;
+$c03-footer-link-color:   #1E252C;
+$c03-footer-hover-color:  $c03-main-color;
+
+$c03-footer-01-bg:        #fff;
+$c03-footer-02-bg:        #fff;
+
+
+
+
+/* ----------------------------------------
+* color01
+---------------------------------------- */
+
+/* ----------------------------------------
+* フォント設定
+---------------------------------------- */
+
+
+$font-dg: 'Didact Gothic';
+
+
+/* ----------------------------------------
+* カラースキーム
+---------------------------------------- */
+
+//@import "lib/inc/_color.scss";
+
+
+/* ----------------------------------------
+* all
+---------------------------------------- */
+
+
+
+body.color03{
+
+
+  background: $c03-base-color;
+  color: $c03-text-color; 
+
+
+a{
+  color: $c03-link-color;
+}
+
+/* form
+---------------------------------------- */
+
+form{
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  textarea{
+    border: 1px #ccc solid;
+  }
+  input[type="submit"],
+  button{
+    background: $c03-main-color;
+    color: #fff;
+  }
+}
+
+
+/* ----------------------------------------
+* header
+---------------------------------------- */
+
+#header{
+  background: $c03-header-bg;
+  border-bottom: 1px solid $c03-border-color-light;
+  #logo{
+    font-family: $font-dg;
+    a{
+      color: $c03-text_color;
+    }
+  }
+  #header-sns{
+    a{
+      color: $header-sns-link;
+      &:hover{
+        color: $header-sns-hover;
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* breadcrumb
+---------------------------------------- */
+
+
+.breadcrumb{
+  li{
+    a{
+      color: $c03-text-color;
+      &:hover{
+        color: $c03-main-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* gloval nav
+---------------------------------------- */
+
+#gnav{
+  background: $c03-gnav-bg;
+  border-top: 1px $c03-border-color-light solid;
+  border-bottom: 1px $c03-border-color-light solid;
+  ul{
+    li{
+      &.current-menu-item{
+        a{
+          border-top: 1px $c03-main_color solid;
+        }
+      }
+      a{
+        border-top: 1px $c03-border-color-light solid;
+        color: $c03-gnav-link-color;
+        background: $c03-gnav-bg;
+        &:hover{
+          color: $c03-gnav-hover-color;
+          border-top: 1px $c03-main_color solid;
+        }
+      }
+      .sub-menu{
+        background: #fff;
+        li{
+          a{
+            color: #fff;
+            background: #2b2b2b;
+            border: none;
+            &:hover{
+              background: #373B3B;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* ----------------------------------------
+* content
+---------------------------------------- */
+
+#content{
+  /* キャプション */
+  .wp-caption{
+    border: 1px solid $c03-border-color-light;
+  }
+}
+
+
+/* ----------------------------------------
+* main
+---------------------------------------- */
+
+.cat-content,
+article.post,
+article.page{
+  background: #fff;
+  border: 1px $c03-border-color solid;
+}
+.post-title{
+  a{
+    color: $c03-text_color;
+    &:hover{
+      color: $c03-key-color;
+    }
+  }
+}
+
+.post-title{
+  a{
+    color: $c03-main_color;
+    &:hover{
+      color: $c03-key-color;
+    }
+  }
+}
+.cat-content,
+article.page{
+  .post-header{
+    background: #fff;
+  }
+}
+.post-meta{
+  border-top: 1px $c03-border-color-light solid;
+  li{
+    background: #fff;
+  }
+}
+
+.post-content{
+  hr{
+    border-bottom: 1px solid $c03-border-color-light;
+  }
+  pre{
+    padding: 20px;
+  }
+  h2{
+    border-bottom: 1px solid $c03-border-color-light;
+  }
+  h3{
+    border-left: 5px solid $c03-border-color;
+  }
+  blockquote{
+    border: 1px $c03-border-color solid;
+    &:before{
+      color: #e7e7e7;
+    }
+    cite{
+      color: #808080;
+    }
+  }
+  table{
+    border: 1px #ddd solid;
+    th,
+    td{
+      border: #ddd solid 1px;
+    }
+    th{
+      color: #fff;
+    }
+    thead{
+      th{
+        background: $c03-gray;
+      }
+    }
+    tbody{
+      th{
+        background: lighten($c03-gray, 20%); 
+      }
+    }
+    &.table-line{
+      table,
+      th,
+      td{
+        border-color: #fff;
+      }
+      th{
+        background: transparent;
+        color: $c03-text_color;
+        font-weight: bold;
+      }
+      thead{
+        th{
+          background: $c03-gray;
+          color: #fff;
+        }
+      }
+      tr{
+        background: #eee;
+      }
+      tr:nth-child(2n+1) {
+        background: #ddd;
+      }
+
+    }
+  }
+}
+
+.post-cta{
+  background: $c03-post-cta-bg;
+  color: $c03-post-cta-color;
+  border-top: 3px solid $c03-border-color;
+  border-bottom: 1px solid $c03-border-color;
+  .cta-post-title{
+    border-bottom: 1px solid $c03-border-color-light;
+  }
+  .post-cta-btn{
+    a{
+      background: $c03-post-cta-btn-bg;
+      color: $c03-post-cta-btn-color;
+      border-bottom: 5px solid darken( $c03-post-cta-btn-bg ,10% );
+      &:hover{
+        background: lighten($c03-post-cta-btn-bg,10%);
+        border-bottom: 5px solid $c03-post-cta-btn-bg;
+      }
+    }
+  }
+  .btn{
+    color: #fff;
+    background: $c03-main-color;
+    &:hover{
+      background: $c03-key-color;
+    }
+  }
+}
+
+.post-share{
+  .post-share-list1,
+  .post-share-list2,
+  .post-share-list3,
+  .post-share-list4{
+    a{
+      &:hover{
+        background: #f7f7f7;
+      }
+    }
+  }
+  .post-share-facebook{
+    a:hover{
+      color: $facebook-color;
+    }
+  }
+  .post-share-twitter{
+    a:hover{
+      color: $twitter-color;
+    }
+  }
+  .post-share-google{
+    a:hover{
+      color: $google-color;
+    }
+  }
+  .post-share-feedly{
+    a:hover{
+      color: $feedly-color;
+    }
+  }
+}
+.post-author{
+  border-top: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+  color: $c03-text-color;
+  a{
+    color: $c03-main-color;
+  }
+  .post-author-meta{
+    color: $c03-text-color;
+    background: #f7f7f7;
+  }
+}
+
+/* comment
+---------------------------------------- */
+
+.comment-list > .comment{
+  border-bottom: 1px #eee solid;
+}
+.comment-list{
+  .children{
+    .comment-body{
+      background: #f7f7f7;
+    }
+  }
+}
+
+/* loop
+---------------------------------------- */
+
+.cat-content{
+  background: #fff;
+}
+
+.post-loop-wrap{
+  .more-link{
+    border: 1px $c03-main-color solid;
+    color: $c03-main_color;
+    &:hover{
+      background: $c03-main_color;
+      color: #fff;
+    }
+  }
+  .post-footer{
+    border-top: 1px $c03-border-color-light solid;
+  }
+
+}
+
+.pagination span, .pagination a {
+  color: $c03-text_color;
+  background: #fff;
+}
+ 
+.pagination a:hover{
+  color:#fff;
+  background: #3279BB;
+}
+ 
+.pagination .current{
+  background: #3279BB;
+  color:#fff;
+}
+
+/* ----------------------------------------
+* side
+---------------------------------------- */
+
+.side-widget{
+  a{
+    color: $c03-side-link-color;
+    &:hover{
+      color: $c03-side-hover-color;
+    }
+  }
+  ul{
+    li{
+      border-bottom: 1px solid $c03-border-color;
+    } 
+  }
+  a{
+    color: $c03-side-link-color;
+    &:hover{
+      color: $c03-main-color;
+    }
+  }
+}
+
+/* search */
+
+/* search */
+.widget_search{
+    background: #fff;
+    border: 1px solid $c03-border-color;
+  form{
+    input[type=text]{
+      border: none;
+    }
+    button{
+      color: $gray;
+      background: #fff;
+    }    
+  }
+}
+
+/* comment */
+
+.recentcomments{
+  color: #808080;
+  a{
+    color: $c03-text-color;
+  }
+}
+
+/* 実装中止----------- */
+
+/* follow */
+#side .share-list-wrap{
+  background: $c03-base-color;
+  .post-share-list1,
+  .post-share-list2,
+  .post-share-list3,
+  .post-share-list4{
+    li{
+      a{
+        background: #fff;
+        color: $c03-gray;
+      }
+      &.post-share-facebook{
+        a:hover{
+          color: $facebook-color;
+        }
+      }
+      &.post-share-twitter{
+        a:hover{
+          color: $twitter-color;
+        }
+      }
+      &.post-share-google{
+        a:hover{
+          color: $google-color;
+        }
+      }
+      &.post-share-feedly{
+        a:hover{
+          color: $feedly-color;
+        }
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+* footer
+---------------------------------------- */
+
+#footer{
+  color: $c03-footer-color;
+  a{
+    color: $c03-footer-link-color;
+    &:hover{
+      color: $c03-footer-hover-color;
+    }
+  }
+}
+.footer-01{
+  background: $c03-footer-01-bg;
+  border-top: 1px $c03-border-color-light solid;
+}
+.footer-02{
+  background: $c03-footer-02-bg;
+  border-top: 1px $c03-border-color-light solid;
+}
+
+
+/* ----------------------------------------
+* LP
+---------------------------------------- */
+
+.single-lp{
+  .lp-wrap{
+    border: 1px solid $c03-border-color-light;
+    background: $c03-lp-wrap-bg;
+  }
+  #lp-header{
+    background: $c03-lp-head-bg;
+    h1{
+      color: $c03-main-color;
+      border-bottom: 1px solid $c03-border-color-light;
+    }
+  }
+  .lp-form{
+    background: #494c4e;
+    color: #fff;
+    input[type=submit],
+    button{
+      background: $c03-post-cta-btn-bg;
+      color: $c03-post-cta-btn-color;
+      border-bottom: 5px solid darken( $c03-post-cta-btn-bg, 10% );
+      &:hover{
+        background: lighten($c03-post-cta-btn-bg, 5%);
+      }
+    }
+  }
+}
+
+} // body end

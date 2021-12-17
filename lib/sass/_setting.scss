@@ -1,0 +1,129 @@
+// ----------------------------------------
+// settings
+// ----------------------------------------
+
+  
+$twitter-color: #00aced;
+$facebook-color: #305097;
+$google-color: #db4a39;
+$hatena-color: #7db4e8;
+$feedly-color: #6cc655;
+
+
+// display ========================================
+
+
+// gutter ----------
+
+$pc-gt: 48px;
+$lp-gt: 36px;
+$tb-gt: 24px;
+$sp-gt: 12px;
+
+
+// width ----------
+
+$side-width: 310px;
+
+
+
+// font ========================================
+
+$font-awesome: FontAwesome;
+$font-sans: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+
+// color ========================================
+
+// common
+//----------------------------------------
+
+$base-color:      #fff;
+$base-color-2:    #fafafa;
+$main-color:      #3B4552;
+$main-color-2:    #3D5C6F;
+$main-color-3:    #47B39D;
+$accent-color:    #FF6C00;
+
+$text-color:      #241913;
+
+$border-color:        #e5e5e5;
+$border-color-light:  #eee;
+
+$gray:          #5e6265;
+$gray-light:    #cccccc;
+
+$dark:          #131D2A;
+
+// link ----------------------------------
+
+$link-color: #47B39D;
+$side-link-color: #47B39D;
+
+// sns ----------
+
+$twitter-color:   #00aced;
+$facebook-color:  #305097;
+$google-color:    #db4a39;
+$hatena-color:    #7db4e8;
+$feedly-color:    #2bb24c;
+
+// header --------------------------------
+
+$header-text-logo:  $base-color;
+$header-bg:         $main-color-3;
+
+// gnav ----------------------------------
+
+$gnav-bg:           $main-color-3;
+$gnav-hover-bg:     lighten( $gnav-bg, 5% );
+$gnav-link-color:      #fff;
+$gnav-hover-color:  $gnav-link-color;
+
+// frontpage --------------------------------
+
+$mainv-bg-1:    #41BAA4;
+$mainv-bg-2:    #42A994;
+$mainv-color:  #fff;
+
+// content --------------------------------
+
+// main --------------------------------
+// post-cta --------------------------------
+
+$post-cta-bg:     $dark;
+$post-cta-color:  $base-color;
+$post-cta-btn-bg: #F86222;
+$post-cta-btn-color: #fff;
+
+$post-meta-bg:      #1F3145;
+$post-meta-bg-2:    #1C2B3D;
+$post-meta-color:   #fff;
+
+// single-lp --------------------------------
+
+$lp-wrap-bg:  #fff;
+$lp-head-bg:  $main-color-3;
+
+// side --------------------------------
+
+$side-link-color:   $main-color-3;
+$side-hover-color:  $main-color-3;
+
+$side-title-bg:     #ebebeb;
+$side-title-border: #e4e4e4;
+
+// footer --------------------------------
+
+$footer-border-top:   $main-color;
+
+$footer-color:        #fff;
+$footer-link-color:   #fff;
+$footer-hover-color:  #ccc;
+
+$footer-01-bg:        #031731;
+$footer-02-bg:        #010A17;
+
+// sp --------------------------------
+
+$gnav-sp-bg:          $main-color;

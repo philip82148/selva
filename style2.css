@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Selva
+Description: Xeory拡張テーマからのカスタマイズ
+Author: タケル、さっさん
+*/
+
+
+/* all display
+-------------------------------------------------- */
+
+
+body {
+    background: none;
+}
+
+#header #logo img {
+    margin: 0 10px;
+}
+
+.rating-tag.user-selected {
+    background: #f172a3;
+    color: #333;
+}
+
+.pushed-count {
+    font-weight: 600;
+}
+
+.faculty-category {
+    text-align: center;
+    margin: 2em 0 0.4em;
+    font-size: 120%;
+}
+
+body.home .front-loop .top-view-posts .front-loop-cont {
+    padding: 0;
+}
+
+.top-view-post {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 6em 3em 5em;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #cccccc;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 0 auto 1.5em;
+    text-decoration: none;
+}
+
+.front-loop-sep {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.front-loop-sep-box {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.recent-comment {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #cccccc;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    width: 14em;
+    align-items: center;
+}
+
+.front-loop-cont {
+    align-items: center;
+}
+
+.wrap {
+    align-items: center;
+}

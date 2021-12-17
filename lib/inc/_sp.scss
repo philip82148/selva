@@ -1,0 +1,271 @@
+/* ----------------------------------------
+* レスポンシブ
+---------------------------------------- */
+
+
+#header-menu-tog{
+  display: none;
+}
+
+
+@media screen and (max-width: 1218px) {
+  
+/* layout */
+#main{
+  width: 75.15%;
+}
+#side{
+  width: 22.59%;
+}
+
+.wrap{
+  width: auto;
+  margin: 0 36px;
+}
+
+.post-header{
+  padding: 48px;
+}
+  
+}
+
+@media screen and (max-width: 820px) {
+/* phone */
+
+.sp-hide{
+  display: none !important;
+}
+.sp-show{
+  display: block !important;
+}
+
+.alignleft,
+.alignright{
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap{
+  width: 96%;
+  margin: 0 2%;
+}
+
+$main-width: 100%;
+$side-width: 100%;
+
+/* layout */
+#main{
+  width: $main-width;
+  float: none;
+}
+#side{
+  width: $side-width;
+  float: none;
+}
+
+.left-content{
+  #main{
+    width: $main-width;
+    float: none; 
+  }
+  #side{
+    width: $side-width;
+    float: none;
+  }
+}
+.right-content{
+  #main{
+    width: $main-width;
+    float: none; 
+  }
+  #side{
+    width: $side-width;
+    float: none;
+  }
+}
+.one-column{
+  #content{
+    .wrap{
+      width: 100%;
+      #main{
+        width: 100%;
+        float: none;
+      }
+      #side{
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+}
+
+/* header */
+#header{
+  padding: 10px;
+  .wrap{
+    padding: 0;
+  }
+  #logo{
+    img{
+      vertical-align: top;
+    }
+  }
+  #header-primary-nav{
+    display: none;
+  }
+}
+
+#header-menu-tog{
+  display: block;
+  float: right;
+  font-size: 24px;
+}
+#gnav{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+#gnav{
+  margin: 20px 2%;
+  border: 1px solid $gray-light;
+  padding: 10px;
+  ul{
+    li{
+      float: none;
+      position: relative;
+      margin-right: 0;
+      margin-bottom: 1px;
+      &.current-menu-item{
+        a{
+          border-top: none;
+          background: #f7f7f7;
+        }
+      }
+      a{
+        display: block;
+        border-top: none;
+        padding: 12px 8px;
+        color: $gnav-link-color;
+        background: $gnav-bg;
+        text-decoration: none;
+        transition: background .3s ease-in-out;
+        border-bottom: 1px $border-color solid;
+        &:hover{
+          color: $gnav-hover-color;
+          border-top: none;
+          .sub-menu{
+            display: block;
+          }
+        }
+      }
+      .sub-menu{
+        display: block;
+        position: relative;
+        width: auto;
+        margin-left: 20px;
+        background: #fff;
+        border: none;
+        border-bottom: none;
+        li{
+          float: none;
+          margin-right: 0;
+          &:list-child{
+            border-bottom: none;
+          }
+          a{
+            color: $main_color;
+            background: #fff;
+            padding: 10px 15px;
+          border-bottom: 1px $border-color solid;
+            &:hover{
+              background: #fafafa;
+              color: $main_color;
+              box-shadow: 0;
+            }
+          }
+        }
+      }
+      .sub-menu .sub-menu{
+        left: auto;
+        top:auto;
+        
+      }
+    }
+  }
+}
+
+/* content */
+
+#content{
+  .wrap{
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+.post-title{
+  margin-bottom: 12px;
+}
+
+/* loop */
+
+
+.post-loop-wrap{
+  .post-thumbnail{
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    img{
+      max-width: 100%;
+      height: auto; 
+      margin: 0 auto;
+    }
+  }
+  .post-content{
+    padding: 0 20px;
+  }
+  .post-footer{
+    display: none;
+  }
+}
+
+/* comment */
+
+.comment-form-author,
+.comment-form-email{
+  float: none;
+  width: auto;
+}
+/* padding */
+
+.post-header{
+  padding: 42px 20px 20px ;
+}
+.post-content,
+.cta-post-title,
+.post-cta,
+.post-cta-inner,
+.post-footer,
+.post-share,
+.post-author,
+article.page .post-header{
+  padding: 20px !important;
+}
+
+.post-thumbnail,
+.post-cta-img{
+  margin-left: 0;
+  margin-right: 0;
+  float: none;
+}
+
+/* phone end */
+}
