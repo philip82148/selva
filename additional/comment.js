@@ -130,7 +130,7 @@ function submitInBackground($commentForm) {
         $spinner.remove();
     }).fail(function(jqXHR, textStatus, errorThrown) {
         // alertすると処理が止まってしまうので先にspinnerを外す
-        $spinner.remove();
+//        $spinner.remove();
         // removeしてから反映に時間が掛かるようなので100ms待つ
         setTimeout(function () {
             showErrorMessage($(jqXHR.responseText));

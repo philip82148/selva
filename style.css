@@ -3,8 +3,8 @@
 /*
 Theme Name: Selva
 Description: Xeory拡張テーマからのカスタマイズ
-Author: タケル、さっさん
-Version: 0.9.5
+Author: さっさん、タケル
+Version: 0.9.7
 */
 
 
@@ -6848,6 +6848,9 @@ body.color04 .profile-comment #comments {
     }
     .navigation-button2 {
         border-right: 1px solid black;
+    }
+    .profile-comment {
+        min-height: 0;
     }
 }
 

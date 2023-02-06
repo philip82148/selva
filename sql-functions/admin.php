@@ -558,6 +558,7 @@ function insert_course_data(string $csv_file_name, bool $auto_create=false) : ar
     $header_row_no = NULL;
     $first_row = []; // 見出しが見つからないときのエラー通知に使う。
     $invalid_columns_row_nos = '';
+    $csv_rows = [];
 
 	// ファイル→配列化
     $is_win = strpos(PHP_OS, "WIN") === 0;

@@ -1,6 +1,6 @@
 <?php
 
-$query=get_search_query();
+$query = get_search_query();
 $start_ns = hrtime(true);
 $pages = search($query);
 $end_ns = hrtime(true);
